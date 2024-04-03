@@ -1,10 +1,10 @@
 services:
 - type: web
-  name: blue-meili-dev
+  name: blue-meili
   env: docker
   repo: https://github.com/bloohq/meilisearch-docker-render.git
   region: singapore
-  plan: starter
+  plan: standard
   disk:
     name: meili-data
     mountPath: /meili-data
@@ -17,4 +17,4 @@ services:
   - key: MEILI_DB_PATH
     value: /meili-data
   - key: MEILI_ENV
-    value: development
+    value: production
