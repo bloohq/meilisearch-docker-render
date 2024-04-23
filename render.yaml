@@ -8,7 +8,7 @@ services:
   disk:
     name: meili-data
     mountPath: /meili-data
-    sizeGB: 25
+    sizeGB: 50
   envVars:
   - key: MEILI_HTTP_ADDR
     value: 0.0.0.0:80
